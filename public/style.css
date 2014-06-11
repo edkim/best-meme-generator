@@ -1,0 +1,8 @@
+h2 { 
+    font-size: 84px;
+    font-family: impact;
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    -webkit-text-stroke: 5px black;
+}
