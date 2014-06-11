@@ -6,10 +6,11 @@ app.use(express.static(__dirname + '/public'));
 app.engine('html', ejs.renderFile);
 
 app.get('/', function(req, res){
+	console.log("req params", req.query)
   res.render('index.ejs',
        {
-            top: process.env.TOP,
-            bottom: process.env.BOTTOM
+            top: req.query.top,
+            bottom: req.query.bottom
        });
 });
 
