@@ -1,11 +1,17 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<img src="kitten.jpg">
-<h2 style="top:-63px; left: 68px"><%= top %></h2>
-<h2 style="top:150px; left: 48px"><%= bottom %></h2>
+<div id="meme">
+	<img src="kitten.jpg">
+	<h2 style="top:-63px; left: 68px"><%= top %></h2>
+	<h2 style="top:150px; left: 48px"><%= bottom %></h2>
+</div>
 <form name="input" action="/" method="get">
 	<input type="text" name="top" placeholder="TOP TEXT" />
 	<input type="text" name="bottom" placeholder="BOTTOM TEXT" />
 	<input type="submit"></input>
 </form>
+<button id="create-button">Create Meme</button>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="html2canvas.js"></script>
+<script type="text/javascript" src="screenshot.js"></script>
